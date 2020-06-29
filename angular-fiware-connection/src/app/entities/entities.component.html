@@ -1,0 +1,40 @@
+
+  
+  <mat-grid-list cols="12" rowHeight="500px">
+    <mat-grid-tile [colspan]="2">
+      <!--<button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+        <mat-icon>plus_one</mat-icon>
+      </button>-->
+      
+      <form>
+        <h3>Seleccionar idPattern</h3>
+        <mat-form-field>
+          <mat-label>idPattern de Aire</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="idPattern" (selectionChange)="getEntitiesByIdPattern($event.value)">
+            <mat-option *ngFor="let idPattern of idPatterns" [value]="idPattern">
+              {{idPattern}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <p> idPattern seleccionado: {{selectedValue}} </p>
+      </form>
+      
+
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="6">
+        <mat-list>
+            <div mat-subheader>Aire - Entities</div>
+            <mat-list-item *ngFor="let entity of entities">
+              <mat-icon mat-list-icon>note</mat-icon>
+              <div mat-line>{{entity.id}}</div>
+              <div mat-line>MP10: {{entity.mp10.value}} </div>
+              <div mat-line>MP2_5: {{entity.mp2_5.value}} </div>
+              <div mat-line>Latidud, Longitud: {{entity.latitud.value}} , {{entity.longitud.value}} </div>
+            </mat-list-item>
+          </mat-list>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="4">
+      <app-entities-map
+      [entities]="entities"></app-entities-map>
+    </mat-grid-tile>
+  </mat-grid-list>

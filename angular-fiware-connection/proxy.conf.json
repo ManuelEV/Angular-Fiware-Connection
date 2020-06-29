@@ -1,0 +1,15 @@
+{
+    "/oauth2/*":{
+        "target": "https://fw-idm.smartaraucania.org",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    },
+
+    "/orion-north/v2/*":{
+        "target": "https://fw-producer.smartaraucania.org",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}
