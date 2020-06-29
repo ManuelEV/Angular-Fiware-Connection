@@ -47,6 +47,7 @@ export class EntitiesComponent implements OnInit {
   selectedValue: String = "Aire";
 
   idPatterns = [
+    'Aire',
     'Aire-sensores-centro',
     'Aire-sensores-amanecer',
     'Aire-sensores-el-carmen',

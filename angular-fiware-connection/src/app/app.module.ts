@@ -17,6 +17,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { EntitiesMapComponent } from './entities/entities-map/entities-map.component';
 
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,8 @@ import { EntitiesMapComponent } from './entities/entities-map/entities-map.compo
     MatListModule,
     MatButtonModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]
