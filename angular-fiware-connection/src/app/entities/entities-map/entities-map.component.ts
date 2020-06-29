@@ -80,7 +80,9 @@ export class EntitiesMapComponent implements OnInit, OnChanges {
           iconRetinaUrl: 'leaflet/marker-icon-2x.png',
           shadowUrl: 'leaflet/marker-shadow.png'
         })
-      });
+      }).on('click', () => {
+        
+      }).bindPopup('<p><b>MP10:</b> ' + this.entities[key].mp10.value + ', <b>MP2.5:</b> ' +  this.entities[key].mp2_5.value + '</p>');;
       this.markers.push(m);
       
       m.addTo(this.map);
