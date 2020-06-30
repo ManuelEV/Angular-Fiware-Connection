@@ -12,7 +12,7 @@ Ejemplo de aplicación web para el consumo de la solución Fiware de Smart Arauc
 
 ## Requisitos
 
-Para consumir la API de Orion, es necesario contar con una cuenta en Keyrock que tenga permisos para acceder a Orion. Esta configuración se debe hacer en un archivo llamado environment.ts ubicado en src/environments/. En la misma ubicación hay un [archivo de ejemplo]('https://github.com/ManuelEV/Angular-Fiware-Connection/blob/master/angular-fiware-connection/src/environments/environment.ts.example').
+Para consumir la API de Orion, es necesario contar con una cuenta en Keyrock que tenga permisos para acceder a Orion. Esta configuración se debe hacer en un archivo llamado environment.ts ubicado en src/environments/. En la misma ubicación hay un [archivo de ejemplo](https://github.com/ManuelEV/Angular-Fiware-Connection/blob/master/angular-fiware-connection/src/environments/environment.ts.example).
 
 
 ```javascript
