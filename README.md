@@ -26,7 +26,7 @@ export const environment = {
 
 Luego de tener esa configuración, es posible utilizar la aplicación con los comandos:
 
-```
+```node
 //Instalar dependencias de node
 npm install
 //Ejecutar aplicación en http://localhost:4200
